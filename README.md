@@ -1,12 +1,12 @@
 Elevator Saga
 ===================
-This is a forked repo.
-
 The elevator programming game
 
-[Play it now!](http://play.elevatorsaga.com/)
+NOTE: This is a forked repo. Original repo is at [magwo/elevatorsaga](https://github.com/magwo/elevatorsaga).
 
-Or [Run the unit tests](http://play.elevatorsaga.com/test/)
+[Play it now!](https://shoheihagiwara.github.io/elevatorsaga/)
+
+Or [Run the unit tests](https://shoheihagiwara.github.io/elevatorsaga/test/)
 Please report any test failures as an issue.
 
-![Image of Elevator Saga in browser](https://raw.githubusercontent.com/magwo/elevatorsaga/master/images/screenshot.png)
+![Image of Elevator Saga in browser](https://raw.githubusercontent.com/shoheihagiwara/elevatorsaga/master/images/screenshot.png)
