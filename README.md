@@ -1,5 +1,7 @@
 Elevator Saga
 ===================
+This is a forked repo.
+
 The elevator programming game
 
 [Play it now!](http://play.elevatorsaga.com/)
