@@ -1,9 +1,7 @@
 name: Greet Everyone
-# This workflow is triggered on pushes to test_action branch.
+# This workflow is triggered on pushes to the repo.
 on: 
   push:
-    branches: 
-      - test_action
 
 jobs:
   build:
