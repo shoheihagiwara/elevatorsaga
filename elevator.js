@@ -1,3 +1,5 @@
+import { distanceNeededToAchieveSpeed } from "./base"
+
 function newElevStateHandler(elevator) { elevator.handleNewState(); }
 
 function Elevator(speedFloorsPerSec, floorCount, floorHeight, maxUsers) {

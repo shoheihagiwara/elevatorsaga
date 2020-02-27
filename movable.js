@@ -1,3 +1,5 @@
+import { unobservable } from "./libs/unobservable";
+import { newGuard } from "./base";
 
 var EPSILON = 0.00001;
 
@@ -135,3 +137,6 @@ Movable.prototype.setParent = function(movableParent) {
         this.moveToFast(objWorld[0] - parentWorld[0], objWorld[1] - parentWorld[1]);
     }
 };
+
+
+export {Movable};

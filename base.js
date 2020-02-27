@@ -6,7 +6,7 @@
             log:f, info:f, warn:f, debug:f, error:f
         };
     }
-}());
+}()); // XXX: common idiom is "})()", but this works, so not fixing it.
 
 var limitNumber = function(num, min, max) {
     return Math.min(max, Math.max(num, min));
@@ -48,12 +48,12 @@ var createBoolPassthroughFunction = function(owner, obj, objPropertyName) {
     };
 };
 
-distanceNeededToAchieveSpeed = function(currentSpeed, targetSpeed, acceleration) {
+let distanceNeededToAchieveSpeed = function(currentSpeed, targetSpeed, acceleration) {
     // v² = u² + 2a * d
     var requiredDistance = (Math.pow(targetSpeed, 2) - Math.pow(currentSpeed, 2)) / (2 * acceleration);
     return requiredDistance;
 };
-accelerationNeededToAchieveChangeDistance = function(currentSpeed, targetSpeed, distance) {
+let accelerationNeededToAchieveChangeDistance = function(currentSpeed, targetSpeed, distance) {
     // v² = u² + 2a * d
     var requiredAcceleration = 0.5 * ((Math.pow(targetSpeed, 2) - Math.pow(currentSpeed, 2)) / distance);
     return requiredAcceleration;
@@ -85,3 +85,4 @@ var getCodeObjFromCode = function(code) {
     return obj;
 }
 
+export { newGuard, distanceNeededToAchieveSpeed, accelerationNeededToAchieveChangeDistance };

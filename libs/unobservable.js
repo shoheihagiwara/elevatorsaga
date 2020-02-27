@@ -1,3 +1,5 @@
+let globalUnobservable = {} ;
+
 (function(unobservable) { "use strict";
 
 // Black magic stuff
@@ -109,4 +111,7 @@ unobservable.Observable = function() {
 unobservable.observable(unobservable.Observable.prototype, {numPreallocatedHandlers: 2, addDataMembers: false});
 unobservable.asObservable = unobservable.observable;
 unobservable.CustomArray = CustomArray; // Expose for testability
+globalUnobservable = unobservable
 })((typeof window !== "undefined" ? window.unobservable = {} : (typeof exports !== "undefined" ? exports : self.unobservable = {})));
+
+export { globalUnobservable as unobservable };
