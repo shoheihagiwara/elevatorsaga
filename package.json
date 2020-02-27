@@ -1,0 +1,33 @@
+{
+  "name": "elevatorsaga",
+  "version": "1.0.0",
+  "description": "elevator game",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoheihagiwara/elevatorsaga.git"
+  },
+  "keywords": [
+    "elevator",
+    "game"
+  ],
+  "author": "Shohei Hagiwara <hagiwara.shohei@gmail.com> (https://shoheihagiwara.github.io/resume)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shoheihagiwara/elevatorsaga/issues"
+  },
+  "homepage": "https://github.com/shoheihagiwara/elevatorsaga#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "jasmine": "^3.5.0"
+  }
+}
