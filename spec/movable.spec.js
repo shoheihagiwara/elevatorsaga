@@ -1,18 +1,13 @@
 import { Movable } from "../movable";
+import { timeForwarder } from "./lib";
 
-var timeForwarder = function(dt, stepSize, fn) {
-	var accumulated = 0.0;
-	while(accumulated < dt) {
-		accumulated += stepSize;
-		fn(stepSize);
-	}
-};
 
 describe("Movable class", function () {
     var m = null;
     var mocHandlers = null;
 
-    beforeAll(function () {
+    beforeEach(function () {
+        m = new Movable();
         mocHandlers = {
             someHandler: function () { },
             someOtherHandler: function () { }
@@ -20,10 +15,6 @@ describe("Movable class", function () {
         for (let key in mocHandlers) {
             spyOn(mocHandlers, key).and.callThrough();
         }
-    });
-
-    beforeEach(function () {
-        m = new Movable();
     });
     it("disallows incorrect creation", function () {
         var faultyCreation = function () { Movable(); };
