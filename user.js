@@ -1,3 +1,6 @@
+import { Movable } from "./movable";
+import { newGuard } from "./base";
+
 function User(weight) {
     newGuard(this, User);
     Movable.call(this);
@@ -73,3 +76,5 @@ User.prototype.elevatorAvailable = function(elevator, floor) {
         this.pressFloorButton(floor);
     }
 };
+
+export default User;
