@@ -85,4 +85,4 @@ var getCodeObjFromCode = function(code) {
     return obj;
 }
 
-export { newGuard, distanceNeededToAchieveSpeed, accelerationNeededToAchieveChangeDistance };
+export { newGuard, distanceNeededToAchieveSpeed, accelerationNeededToAchieveChangeDistance, limitNumber, epsilonEquals };

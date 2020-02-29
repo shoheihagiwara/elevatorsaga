@@ -28,6 +28,10 @@
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/register": "^7.8.3",
-    "jasmine": "^3.5.0"
+    "jasmine": "^3.5.0",
+    "jasmine-expect": "^4.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }

@@ -1,4 +1,7 @@
-import { distanceNeededToAchieveSpeed } from "./base"
+import { distanceNeededToAchieveSpeed } from "./base";
+import { Movable } from "./movable";
+import { newGuard, limitNumber, epsilonEquals, accelerationNeededToAchieveChangeDistance } from "./base";
+import _ from "lodash";
 
 function newElevStateHandler(elevator) { elevator.handleNewState(); }
 
@@ -257,3 +260,5 @@ Elevator.prototype.handleNewState = function() {
     }
     this.previousTruncFutureFloorIfStopped = futureTruncFloorIfStopped;
 };
+
+export default Elevator;
