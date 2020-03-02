@@ -7,7 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": "/spec/.*spec\\.[jt]sx?$"
   },
   "repository": {
     "type": "git",
@@ -26,10 +32,10 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
     "@babel/register": "^7.8.3",
-    "jasmine": "^3.5.0",
-    "jasmine-expect": "^4.0.3"
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.15"

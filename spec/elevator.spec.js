@@ -145,7 +145,8 @@ describe("Elevator object", function () {
             timeForwarder(5.0, STEPSIZE, function (dt) {
                 e.update(dt);
                 e.updateElevatorMovement(dt);
-                expect(e.getExactCurrentFloor()).toBeWithinRange(1.0, 3.0, "(STEPSIZE is " + STEPSIZE + ")");
+                expect(e.getExactCurrentFloor()).toBeGreaterThanOrEqual(1.0);
+                expect(e.getExactCurrentFloor()).toBeLessThanOrEqual(3.0);
             });
             expect(e.getExactCurrentFloor()).toEqual(3.0);
         });
